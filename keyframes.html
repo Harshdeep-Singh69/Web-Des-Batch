@@ -1,0 +1,48 @@
+<!-- Keyframe animation -->
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	div{
+		width: 100vw;
+		height: 1000px;
+		position: relative;
+		z-index: -1;
+		background-color: rebeccapurple;
+		animation: vasudhaji 15s;
+	}
+	@keyframes vasudhaji{
+			0%{ background: magenta; left: 0px; top: 0px;}
+			25%{background: darkorange; left: 0px; top: 0px;}
+			50%{background: teal; left: 0px; top: 0px;}
+			75%{background: lime; left: 0px; top: 0px;}
+			100%{background: blueviolet; left: 0px; top: 0px;}
+		}
+		#aa{
+			width: 200px;
+			height: 200px;
+			background-color: darksalmon ;
+			position: relative;
+			z-index: 1;
+			animation: mohit 12s;
+
+		}
+		@keyframes mohit{
+			0%{ background: crimson; left: 0px; top: 0px;}
+			25%{background: darkgreen; left: 1000px; top: 0px;}
+			50%{background: plum; left: 1000px; top: 500px;}
+			75%{background: darkcyan; left: 0px; top: 200px;}
+			100%{background: seagreen; left: 0px; top: 0px;}
+		}
+
+	</style>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<div>
+		<div id="aa"></div>
+	</div>
+
+</body>
+</html>
