@@ -1,0 +1,83 @@
+<!-- Media queries:
+	Print
+	Screen(mostly used)
+	Speech
+	All   
+
+
+-Screen-> (Dependent on the screen size)
+	mobile/Tablets/Laptop,Pc
+	MObile-320/480 VW
+	Tablets-700/900 VW
+	Pc/Laptops-1024/1440/1920 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	body{
+		margin: 0px;
+		padding: 0px;
+	}
+		#aa{
+			width: 100vw;
+			height: 100px;
+			background-color: greenyellow;
+		}
+		p{
+			font-size: 80px;
+		}
+		#ab{
+			width: 50%;
+			height: 400px;
+			background-color: palegreen;
+			float: left;
+			margin-left: 170px;
+		}
+		#ac{
+			width: 30%;
+			height: 400px;
+			background-color: lime;
+			float: left
+		}
+		@media screen and (max-width: 900px)
+		{
+			#aa{
+				background-color: darkcyan;
+				
+			}
+			p{
+				font-size: 60px;
+			}
+			#ab{
+				border: 10px solid black;
+			}
+			#ac{
+				border: 5px groove;
+				margin-left: 300px;
+			}
+		}
+		@media screen and (max-width: 600px)
+		{
+			#aa{
+				background-color: thistle;
+				
+			}
+			p{
+				font-size: 30px;
+			}
+		}
+
+	</style>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<div id="aa"> 
+		<p>Hello Everyone!</p>
+	</div>
+	<div id="ab"></div>
+	<div id="ac"></div>
+
+</body>
+</html>	
