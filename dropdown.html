@@ -1,0 +1,48 @@
+<!-- dropdown -->
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.main{
+			width: 50px;
+			height: 100px;
+			float: right;
+			position: relative;
+		}
+		.ddclass{
+			display: none;
+			position: absolute;
+			min-width: 200px;
+		}
+		.ddclass a{
+			color: black;
+			text-decoration: none;
+			display: block;
+		}
+		.main:hover .ddclass{
+			display: block;
+		}
+		.ddclass a:hover{
+			background-color: pink;
+			color: blue;
+		}
+		.ddclass:hover .btn{
+			background-color: transparent;
+		}
+	</style>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<div class="main">
+		<button class="btn">===</button>
+		<div class="ddclass">
+			<a href="#">a</a>
+			<a href="#">b</a>
+			<a href="#">c</a>
+
+		</div>
+	</div>
+
+</body>
+</html>
