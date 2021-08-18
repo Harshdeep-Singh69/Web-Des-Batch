@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function keyp(element) {			
+		element.style.backgroundColor="green";
+		}
+		function onfoc(element){
+			element.style.backgroundColor="red";
+		}
+		function onbl(element){
+			element.style.backgroundColor="";
+		}
+		function oinp(element){
+			var a = element.value;
+			document.getElementById("aa").innerHTML=a;
+		}
+	</script>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<input id="inp" type="text" name="" onkeypress="keyp(this)" onfocus="onfoc(this)"
+	onblur="onbl(this)" oninput="oinp(this)" >
+	<div id="aa"></div>
+</body>
+</html>
