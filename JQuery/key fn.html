@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		/*$(document).ready(function(){
+			$("input").keydown(function(){
+				$("input").css("background-color","yellow");
+			})
+			$("input").keyup(function(){
+				$("input").css("background-color","pink");
+			})
+		})*/
+		var i = 0;
+		$(document).ready(function(){
+			$("input").keydown(function(){
+				$('span').text(i+=1);
+			})
+		})
+	</script>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<input type="text" name="">
+	<span>0</span>
+
+</body>
+</html>
