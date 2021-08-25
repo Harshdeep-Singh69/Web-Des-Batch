@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		/*$(document).ready(function(){
+			$("p").bind("click ",function(){
+				alert("dont click");
+			});
+		});*/
+		$(document).ready(function(){
+			$("p").bind("mouseover mouseout",function(){
+				$("p").toggleClass("aa");
+			})
+		})
+	</script>
+	<style type="text/css">
+		.aa{
+			font-size: 200%;
+			color: blueviolet;
+			background-color: pink;
+		}
+	</style>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<p>Hello Everyone</p>
+</body>
+</html>
