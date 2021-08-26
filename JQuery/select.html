@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#ii{
+			font-size: 30px;
+			color: yellow;
+			display: inline-block;
+			background-color: green;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("select").change(function(){
+				document.getElementById('ii').innerHTML="You Selected : " + document.getElementById('aa').value;
+			})
+		})
+	</script>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<select id="aa">
+		<option selected="selected">a</option>
+		<option>b</option>
+		<option>c</option>
+		<option>d</option>
+		<option>e</option>
+	</select>
+	<div id="ii"></div>
+</body>
+</html>
